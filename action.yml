@@ -10,4 +10,4 @@ runs:
   steps:
     - name: MVN Package
       shell: bash
-      run: mvn -B package --file pom.xml -DskipTests
+      run: mvn -B clean install package --file pom.xml -DskipTests
